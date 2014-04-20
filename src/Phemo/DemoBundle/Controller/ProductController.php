@@ -62,7 +62,7 @@ class ProductController extends Controller
         } catch (Exception $e) {
             $this->flashSession->error($e->getMessage());
 
-            return $this->response->redirect('phemo/product/index');
+            return $this->response->redirect('product/index');
         }
     }
 
@@ -84,7 +84,7 @@ class ProductController extends Controller
                 $product->bind($this->request->getPost('Product'));
 
                 if ($product->save()) {
-                    $this->flashSession->success('Product successful updated!');
+                    $this->flashSession->success('Product #' . $id . ' successful updated!');
                 }
                 else {
                     foreach ($product->getMessages() as $message) {
@@ -92,12 +92,12 @@ class ProductController extends Controller
                     }
                 }
 
-                return $this->response->redirect('phemo/product/edit/' . $id);
+                return $this->response->redirect('product/edit/' . $id);
             }
         } catch (Exception $e) {
             $this->flashSession->error($e->getMessage());
 
-            return $this->response->redirect('phemo/product/index');
+            return $this->response->redirect('product/index');
         }
 
         $this->view->product = $product;
@@ -120,7 +120,7 @@ class ProductController extends Controller
                 if ($product->save()) {
                     $this->flashSession->success('Product successful created!');
 
-                    return $this->response->redirect('phemo/product/edit/' . $product->getProductId());
+                    return $this->response->redirect('product/edit/' . $product->getProductId());
                 }
                 else {
                     foreach ($product->getMessages() as $message) {
@@ -133,7 +133,7 @@ class ProductController extends Controller
         } catch (Exception $e) {
             $this->flashSession->error($e->getMessage());
 
-            return $this->response->redirect('phemo/product/index');
+            return $this->response->redirect('product/index');
         }
 
         $this->view->product = $product;
