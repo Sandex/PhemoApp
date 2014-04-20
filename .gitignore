@@ -1,0 +1,10 @@
+/.idea/
+/nbproject/
+/composer.lock
+/public/assets/
+/tmp/
+/vendor/
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
