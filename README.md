@@ -1,4 +1,4 @@
-Phalcon application structured like as Symfony/Yii
+Phalcon application structured like Symfony/Yii
 -----
 
 (Bundles|Widgets|Assets|Etc)
