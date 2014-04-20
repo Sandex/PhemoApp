@@ -3,6 +3,14 @@ Phalcon application structured like as Symfony/Yii
 
 (Bundles|Widgets|Assets|Etc)
 
+### You need install
+
+Composer
+https://github.com/composer/composer
+
+Phalcon
+https://github.com/phalcon/cphalcon
+
 
 ### Load vendor modules:
 
