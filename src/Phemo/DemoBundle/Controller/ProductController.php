@@ -151,7 +151,7 @@ class ProductController extends Controller
             $product = $this->loadProduct($id);
 
             if ($product->delete()) {
-                $this->flashSession->success('Product deleted!');
+                $this->flashSession->success('Product #' . $id . ' deleted!');
             }
             else {
                 foreach ($product->getMessages() as $message) {
@@ -162,7 +162,7 @@ class ProductController extends Controller
             $this->flashSession->error($e->getMessage());
         }
 
-        return $this->response->redirect('phemo/product/index');
+        return $this->response->redirect('product/index');
     }
 
     /**
@@ -182,7 +182,7 @@ class ProductController extends Controller
         $product = $product->findFirst($id);
 
         if (!$product) {
-            throw new Exception('Product ID: ' . $id . ' does not exist!');
+            throw new Exception('Product #' . $id . ' does not exist!');
         }
 
         return $product;
