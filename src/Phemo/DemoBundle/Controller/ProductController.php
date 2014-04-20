@@ -118,7 +118,7 @@ class ProductController extends Controller
                 $product->bind($this->request->getPost('Product'));
 
                 if ($product->save()) {
-                    $this->flashSession->success('Product successful created!');
+                    $this->flashSession->success('Product #' . $product->getProductId() . ' successful created!');
 
                     return $this->response->redirect('product/edit/' . $product->getProductId());
                 }
