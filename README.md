@@ -3,6 +3,15 @@ Phalcon application structured like as Symfony/Yii
 
 (Bundles|Widgets|Assets|Etc)
 
+
+![index](https://raw.githubusercontent.com/Sandex/PhemoApp/master/src/Phemo/DemoBundle/Resources/doc/index.png "index")
+
+![create](https://raw.githubusercontent.com/Sandex/PhemoApp/master/src/Phemo/DemoBundle/Resources/doc/create.png "create")
+
+![view](https://raw.githubusercontent.com/Sandex/PhemoApp/master/src/Phemo/DemoBundle/Resources/doc/view.png "view")
+
+
+
 ### You need install
 
 Composer
