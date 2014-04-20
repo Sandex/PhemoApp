@@ -3,6 +3,7 @@ Phalcon application structured like Symfony/Yii
 
 (Bundles|Widgets|Assets|Etc)
 
+## Demo
 
 ![index](https://raw.githubusercontent.com/Sandex/PhemoApp/master/src/Phemo/DemoBundle/Resources/doc/index.png "index")
 
@@ -21,7 +22,14 @@ Phalcon
 https://github.com/phalcon/cphalcon
 
 
+### Clone this repo
+
+>git clone git@github.com:Sandex/PhemoApp.git
+
+
 ### Load vendor modules:
+
+In root project run:
 
 >composer install
 
