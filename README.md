@@ -1,5 +1,5 @@
 Phalcon application structured like as Symfony/Yii (Bundles|Widgets|Assets|Etc)
-================================
+-----
 
 ### Load vendor modules:
 
